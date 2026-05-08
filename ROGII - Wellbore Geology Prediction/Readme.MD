@@ -12,13 +12,7 @@ Drilling a horizontal well requires immense technical precision. The goal of thi
 * **Domain Integration:** Physics-Informed Machine Learning. Integrating deterministic algorithms like Z-Velocity Particle Filters and Beam Search Trajectory estimation to act as spatial constraints for the gradient boosters.
 * **Memory Management:** Aggressive downcasting (Float32) and automated garbage collection designed to run flawlessly on constrained 15GB T4x2 / P100 GPU environments.
 
-## Configuration & Paths
-The code is structured to be highly portable between Kaggle, local environments, and customized portals (like Shipd). Global variables are explicitly exposed at the top of all scripts to easily adjust input/output streams:
-```python
-INPUT_PATH  = "/kaggle/input/rogii-wellbore-geology-prediction"
-OUTPUT_PATH = "/kaggle/working"
-
-## 📊 Submission Tracker
+## Submission Tracker
 
 | Date | Notebook Name | Description / Key Features | Local CV (RMSE) | Public LB (RMSE) |
 | :--- | :--- | :--- | :---: | :---: |
