@@ -17,7 +17,7 @@ Drilling a horizontal well requires immense technical precision. The goal of thi
 | Date | Notebook Name | Description / Key Features | Local CV (RMSE) | Public LB (RMSE) |
 | :--- | :--- | :--- | :---: | :---: |
 | 2026-May-08 | `v1` | High-speed Polars feature engineering + XGBoost baseline. Memory-safe T4 inference with safe fallback contingencies. | 15.18 | 11551.955 |
-| YYYY-MM-DD | `v2` | Added Z-Velocity Particle Filters and Beam Search Trajectories. | TBA | TBA |
+| 2026-May-08 | `v2` | Injected Beam Search & Particle Filters. Applied "Global Median" fallback for corrupted test wells. | 15.00 | 685.739 |
 | YYYY-MM-DD | | | | |
 | YYYY-MM-DD | | | | |
 | YYYY-MM-DD | | | | |
