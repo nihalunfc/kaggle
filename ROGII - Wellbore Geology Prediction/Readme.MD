@@ -18,6 +18,6 @@ Drilling a horizontal well requires immense technical precision. The goal of thi
 | :--- | :--- | :--- | :---: | :---: |
 | 2026-May-08 | `v1` | High-speed Polars feature engineering + XGBoost baseline. Memory-safe T4 inference with safe fallback contingencies. | 15.18 | 11551.955 |
 | 2026-May-08 | `v2` | Injected Beam Search & Particle Filters. Applied "Global Median" fallback for corrupted test wells. | 15.00 | 685.739 |
-| YYYY-MM-DD | | | | |
+| 2026-May-09 | `v8` | Fixed `row_index` mapping trap. Polars pipeline now successfully passing physics features to XGBoost. | 15.60 | 15.512 |
 | YYYY-MM-DD | | | | |
 | YYYY-MM-DD | | | | |
