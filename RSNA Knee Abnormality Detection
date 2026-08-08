@@ -3,21 +3,21 @@
   {
    "cell_type": "code",
    "execution_count": 1,
-   "id": "b8f29835",
+   "id": "cf080837",
    "metadata": {
     "_cell_guid": "b1076dfc-b9ad-4769-8c92-a6c4dae69d19",
     "_uuid": "8f2839f25d086af736a60e9eeb907d3b93b6e0e5",
     "execution": {
-     "iopub.execute_input": "2026-08-08T08:02:41.438277Z",
-     "iopub.status.busy": "2026-08-08T08:02:41.437986Z",
-     "iopub.status.idle": "2026-08-08T08:03:43.938388Z",
-     "shell.execute_reply": "2026-08-08T08:03:43.937344Z"
+     "iopub.execute_input": "2026-08-08T08:10:20.666180Z",
+     "iopub.status.busy": "2026-08-08T08:10:20.665883Z",
+     "iopub.status.idle": "2026-08-08T08:10:51.564832Z",
+     "shell.execute_reply": "2026-08-08T08:10:51.563579Z"
     },
     "papermill": {
-     "duration": 62.504896,
-     "end_time": "2026-08-08T08:03:43.939880+00:00",
+     "duration": 30.903604,
+     "end_time": "2026-08-08T08:10:51.566385+00:00",
      "exception": false,
-     "start_time": "2026-08-08T08:02:41.434984+00:00",
+     "start_time": "2026-08-08T08:10:20.662781+00:00",
      "status": "completed"
     },
     "tags": []
@@ -27,204 +27,94 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "Attempting to load via HuggingFace Transformers...\n"
+      "Loading highly optimized baseline weights: /kaggle/input/notebooks/ramazanturann/resnet18/best_resnet18_model.pt\n"
      ]
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "8e9615b81c234433a86c9ee05239b8f1",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "Loading weights:   0%|          | 0/223 [00:00<?, ?it/s]"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
     },
     {
      "name": "stderr",
      "output_type": "stream",
      "text": [
-      "Dinov2ForImageClassification LOAD REPORT from: /kaggle/input/models/metaresearch/dinov2/pytorch/base/1\n",
-      "Key               | Status  | \n",
-      "------------------+---------+-\n",
-      "classifier.bias   | MISSING | \n",
-      "classifier.weight | MISSING | \n",
-      "\n",
-      "Notes:\n",
-      "- MISSING\t:those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.\n"
+      "Epoch 1/5 [Train]: 100%|██████████| 3/3 [00:03<00:00,  1.07s/it]\n",
+      "Epoch 1/5 [Val]: 100%|██████████| 2/2 [00:00<00:00,  2.58it/s]\n"
      ]
     },
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "Successfully loaded via Transformers!\n"
+      "Epoch 01/05 | Train Loss: 0.7198 | Val Loss: 0.6797\n"
      ]
     },
     {
      "name": "stderr",
      "output_type": "stream",
      "text": [
-      "Epoch 1/10 [Train]: 100%|██████████| 3/3 [00:03<00:00,  1.28s/it]\n",
-      "Epoch 1/10 [Val]: 100%|██████████| 1/1 [00:01<00:00,  1.00s/it]\n"
+      "Epoch 2/5 [Train]: 100%|██████████| 3/3 [00:00<00:00,  4.09it/s]\n",
+      "Epoch 2/5 [Val]: 100%|██████████| 2/2 [00:00<00:00,  5.27it/s]\n"
      ]
     },
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "Epoch 01/10 | Train Loss: 1.1958 | Val Loss: 1.1980\n"
+      "Epoch 02/05 | Train Loss: 0.6913 | Val Loss: 0.6992\n"
      ]
     },
     {
      "name": "stderr",
      "output_type": "stream",
      "text": [
-      "Epoch 2/10 [Train]: 100%|██████████| 3/3 [00:02<00:00,  1.32it/s]\n",
-      "Epoch 2/10 [Val]: 100%|██████████| 1/1 [00:00<00:00,  2.31it/s]\n"
+      "Epoch 3/5 [Train]: 100%|██████████| 3/3 [00:00<00:00,  3.85it/s]\n",
+      "Epoch 3/5 [Val]: 100%|██████████| 2/2 [00:00<00:00,  5.75it/s]\n"
      ]
     },
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "Epoch 02/10 | Train Loss: 0.8684 | Val Loss: 0.6578\n"
+      "Epoch 03/05 | Train Loss: 0.6509 | Val Loss: 0.6766\n"
      ]
     },
     {
      "name": "stderr",
      "output_type": "stream",
      "text": [
-      "Epoch 3/10 [Train]: 100%|██████████| 3/3 [00:02<00:00,  1.35it/s]\n",
-      "Epoch 3/10 [Val]: 100%|██████████| 1/1 [00:00<00:00,  2.18it/s]\n"
+      "Epoch 4/5 [Train]: 100%|██████████| 3/3 [00:00<00:00,  4.14it/s]\n",
+      "Epoch 4/5 [Val]: 100%|██████████| 2/2 [00:00<00:00,  5.30it/s]\n"
      ]
     },
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "Epoch 03/10 | Train Loss: 0.6622 | Val Loss: 0.6583\n"
+      "Epoch 04/05 | Train Loss: 0.6273 | Val Loss: 0.6558\n"
      ]
     },
     {
      "name": "stderr",
      "output_type": "stream",
      "text": [
-      "Epoch 4/10 [Train]: 100%|██████████| 3/3 [00:02<00:00,  1.34it/s]\n",
-      "Epoch 4/10 [Val]: 100%|██████████| 1/1 [00:00<00:00,  2.18it/s]\n"
+      "Epoch 5/5 [Train]: 100%|██████████| 3/3 [00:00<00:00,  4.24it/s]\n",
+      "Epoch 5/5 [Val]: 100%|██████████| 2/2 [00:00<00:00,  5.97it/s]\n"
      ]
     },
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "Epoch 04/10 | Train Loss: 0.6583 | Val Loss: 0.6522\n"
+      "Epoch 05/05 | Train Loss: 0.6220 | Val Loss: 0.6417\n"
      ]
     },
     {
      "name": "stderr",
      "output_type": "stream",
      "text": [
-      "Epoch 5/10 [Train]: 100%|██████████| 3/3 [00:02<00:00,  1.32it/s]\n",
-      "Epoch 5/10 [Val]: 100%|██████████| 1/1 [00:00<00:00,  2.24it/s]\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "Epoch 05/10 | Train Loss: 0.6394 | Val Loss: 0.6329\n"
-     ]
-    },
-    {
-     "name": "stderr",
-     "output_type": "stream",
-     "text": [
-      "Epoch 6/10 [Train]: 100%|██████████| 3/3 [00:02<00:00,  1.33it/s]\n",
-      "Epoch 6/10 [Val]: 100%|██████████| 1/1 [00:00<00:00,  2.26it/s]\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "Epoch 06/10 | Train Loss: 0.6266 | Val Loss: 0.6226\n"
-     ]
-    },
-    {
-     "name": "stderr",
-     "output_type": "stream",
-     "text": [
-      "Epoch 7/10 [Train]: 100%|██████████| 3/3 [00:02<00:00,  1.32it/s]\n",
-      "Epoch 7/10 [Val]: 100%|██████████| 1/1 [00:00<00:00,  2.28it/s]\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "Epoch 07/10 | Train Loss: 0.6174 | Val Loss: 0.6122\n"
-     ]
-    },
-    {
-     "name": "stderr",
-     "output_type": "stream",
-     "text": [
-      "Epoch 8/10 [Train]: 100%|██████████| 3/3 [00:02<00:00,  1.32it/s]\n",
-      "Epoch 8/10 [Val]: 100%|██████████| 1/1 [00:00<00:00,  2.27it/s]\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "Epoch 08/10 | Train Loss: 0.6142 | Val Loss: 0.6091\n"
-     ]
-    },
-    {
-     "name": "stderr",
-     "output_type": "stream",
-     "text": [
-      "Epoch 9/10 [Train]: 100%|██████████| 3/3 [00:02<00:00,  1.30it/s]\n",
-      "Epoch 9/10 [Val]: 100%|██████████| 1/1 [00:00<00:00,  2.18it/s]\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "Epoch 09/10 | Train Loss: 0.6102 | Val Loss: 0.6201\n"
-     ]
-    },
-    {
-     "name": "stderr",
-     "output_type": "stream",
-     "text": [
-      "Epoch 10/10 [Train]: 100%|██████████| 3/3 [00:02<00:00,  1.30it/s]\n",
-      "Epoch 10/10 [Val]: 100%|██████████| 1/1 [00:00<00:00,  2.17it/s]\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "Epoch 10/10 | Train Loss: 0.6082 | Val Loss: 0.6251\n"
-     ]
-    },
-    {
-     "name": "stderr",
-     "output_type": "stream",
-     "text": [
-      "Inference: 100%|██████████| 1/1 [00:00<00:00,  1.92it/s]\n"
+      "Inference (Slice Ensemble + TTA): 100%|██████████| 1/1 [00:00<00:00,  2.52it/s]\n"
      ]
     }
    ],
    "source": [
-    "#v12\n",
+    "#v13\n",
     "import os\n",
     "import pandas as pd\n",
     "import numpy as np\n",
@@ -234,7 +124,9 @@
     "import torch.nn as nn\n",
     "from torch.utils.data import Dataset, DataLoader\n",
     "import torchvision.transforms as transforms\n",
+    "import torchvision.models as models\n",
     "from tqdm import tqdm\n",
+    "from PIL import Image\n",
     "\n",
     "train_df = pd.read_csv('/kaggle/input/competitions/rsna-knee-abnormality-detection/train.csv')\n",
     "train_series = pd.read_csv('/kaggle/input/competitions/rsna-knee-abnormality-detection/train_series.csv')\n",
@@ -245,16 +137,27 @@
     "\n",
     "train_df = train_df.dropna(subset=labels).reset_index(drop=True)\n",
     "\n",
-    "class KneeDataset25D(Dataset):\n",
-    "    def __init__(self, df, series_df, data_dir, transform=None):\n",
+    "class KneeDatasetSmarter(Dataset):\n",
+    "    def __init__(self, df, series_df, data_dir, transform=None, is_inference=False):\n",
     "        self.df = df\n",
     "        self.series_df = series_df\n",
     "        self.data_dir = data_dir\n",
     "        self.transform = transform\n",
+    "        self.is_inference = is_inference\n",
     "        self.studies = self.df['StudyInstanceUID'].values\n",
     "        \n",
     "    def __len__(self):\n",
     "        return len(self.studies)\n",
+    "        \n",
+    "    def _process_dcm(self, dcm):\n",
+    "        img = dcm.pixel_array\n",
+    "        img = img - np.min(img)\n",
+    "        if np.max(img) > 0:\n",
+    "            img = img / np.max(img)\n",
+    "        img = (img * 255).astype(np.uint8)\n",
+    "        img = cv2.resize(img, (224, 224))\n",
+    "        img = np.stack([img]*3, axis=-1)\n",
+    "        return Image.fromarray(img)\n",
     "        \n",
     "    def __getitem__(self, idx):\n",
     "        study_id = self.studies[idx]\n",
@@ -268,102 +171,95 @@
     "                slices.sort()\n",
     "                l = len(slices)\n",
     "                \n",
-    "                indices = [max(0, l//4), l//2, min(l-1, 3*l//4)]\n",
-    "                channels = []\n",
-    "                for s_idx in indices:\n",
+    "                if self.is_inference:\n",
+    "                    # Ensembling 3 slices during validation/test (33%, 50%, 66% depth)\n",
+    "                    indices = [max(0, l//3), l//2, min(l-1, 2*l//3)]\n",
+    "                    imgs = []\n",
+    "                    for s_idx in indices:\n",
+    "                        dcm = pydicom.dcmread(os.path.join(series_dir, slices[s_idx]))\n",
+    "                        img = self._process_dcm(dcm)\n",
+    "                        if self.transform: img = self.transform(img)\n",
+    "                        imgs.append(img)\n",
+    "                    img_tensor = torch.stack(imgs)\n",
+    "                else:\n",
+    "                    # Random depth sampling during training to prevent overfitting\n",
+    "                    s_idx = np.random.randint(max(0, int(l*0.4)), min(l, int(l*0.6)) + 1)\n",
     "                    dcm = pydicom.dcmread(os.path.join(series_dir, slices[s_idx]))\n",
-    "                    img = dcm.pixel_array\n",
-    "                    img = img - np.min(img)\n",
-    "                    if np.max(img) > 0:\n",
-    "                        img = img / np.max(img)\n",
-    "                    img = (img * 255).astype(np.uint8)\n",
-    "                    img = cv2.resize(img, (224, 224))\n",
-    "                    channels.append(img)\n",
-    "                img = np.stack(channels, axis=-1)\n",
+    "                    img = self._process_dcm(dcm)\n",
+    "                    if self.transform: img = self.transform(img)\n",
+    "                    img_tensor = img\n",
     "            except:\n",
-    "                img = np.zeros((224, 224, 3), dtype=np.uint8)\n",
+    "                # Fallback blank images\n",
+    "                blank = Image.fromarray(np.zeros((224, 224, 3), dtype=np.uint8))\n",
+    "                if self.is_inference:\n",
+    "                    img_tensor = torch.stack([self.transform(blank) if self.transform else transforms.ToTensor()(blank) for _ in range(3)])\n",
+    "                else:\n",
+    "                    img_tensor = self.transform(blank) if self.transform else transforms.ToTensor()(blank)\n",
     "        else:\n",
-    "            img = np.zeros((224, 224, 3), dtype=np.uint8)\n",
-    "            \n",
-    "        if self.transform:\n",
-    "            img = self.transform(img)\n",
+    "            blank = Image.fromarray(np.zeros((224, 224, 3), dtype=np.uint8))\n",
+    "            if self.is_inference:\n",
+    "                img_tensor = torch.stack([self.transform(blank) if self.transform else transforms.ToTensor()(blank) for _ in range(3)])\n",
+    "            else:\n",
+    "                img_tensor = self.transform(blank) if self.transform else transforms.ToTensor()(blank)\n",
     "            \n",
     "        if all(col in self.df.columns for col in labels):\n",
     "            target = self.df.loc[idx, labels].values.astype(np.float32)\n",
-    "            return img, torch.tensor(target)\n",
+    "            return img_tensor, torch.tensor(target)\n",
     "        else:\n",
-    "            return img, study_id\n",
+    "            return img_tensor, study_id\n",
     "\n",
-    "transform = transforms.Compose([\n",
+    "# Heavy data augmentation for training\n",
+    "train_transform = transforms.Compose([\n",
+    "    transforms.RandomHorizontalFlip(),\n",
+    "    transforms.RandomRotation(15),\n",
+    "    transforms.ColorJitter(brightness=0.2, contrast=0.2),\n",
     "    transforms.ToTensor(),\n",
     "    transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])\n",
     "])\n",
     "\n",
-    "train_dataset = KneeDataset25D(train_df.iloc[:int(len(train_df)*0.8)].reset_index(drop=True), train_series, '/kaggle/input/competitions/rsna-knee-abnormality-detection/train_series', transform=transform)\n",
-    "val_dataset = KneeDataset25D(train_df.iloc[int(len(train_df)*0.8):].reset_index(drop=True), train_series, '/kaggle/input/competitions/rsna-knee-abnormality-detection/train_series', transform=transform)\n",
-    "test_dataset = KneeDataset25D(test_df, test_series, '/kaggle/input/competitions/rsna-knee-abnormality-detection/test_series', transform=transform)\n",
+    "test_transform = transforms.Compose([\n",
+    "    transforms.ToTensor(),\n",
+    "    transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])\n",
+    "])\n",
+    "\n",
+    "train_dataset = KneeDatasetSmarter(train_df.iloc[:int(len(train_df)*0.8)].reset_index(drop=True), train_series, '/kaggle/input/competitions/rsna-knee-abnormality-detection/train_series', transform=train_transform, is_inference=False)\n",
+    "val_dataset = KneeDatasetSmarter(train_df.iloc[int(len(train_df)*0.8):].reset_index(drop=True), train_series, '/kaggle/input/competitions/rsna-knee-abnormality-detection/train_series', transform=test_transform, is_inference=True)\n",
+    "test_dataset = KneeDatasetSmarter(test_df, test_series, '/kaggle/input/competitions/rsna-knee-abnormality-detection/test_series', transform=test_transform, is_inference=True)\n",
     "\n",
     "train_loader = DataLoader(train_dataset, batch_size=16, shuffle=True, num_workers=2)\n",
-    "val_loader = DataLoader(val_dataset, batch_size=16, shuffle=False, num_workers=2)\n",
-    "test_loader = DataLoader(test_dataset, batch_size=16, shuffle=False, num_workers=2)\n",
+    "# Reduced batch size for inference because we are stacking 3 slices per patient\n",
+    "val_loader = DataLoader(val_dataset, batch_size=8, shuffle=False, num_workers=2) \n",
+    "test_loader = DataLoader(test_dataset, batch_size=8, shuffle=False, num_workers=2)\n",
     "\n",
     "device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')\n",
     "\n",
-    "checkpoint_dir = '/kaggle/input/models/metaresearch/dinov2/pytorch/base/1'\n",
-    "checkpoint_file = os.path.join(checkpoint_dir, 'pytorch_model.bin')\n",
+    "# Baseline #v6 Architecture - Highly tuned for this dataset\n",
+    "model = models.resnet18(weights=None)\n",
+    "checkpoint_path = '/kaggle/input/notebooks/ramazanturann/resnet18/best_resnet18_model.pt'\n",
     "\n",
-    "# Robust dual-loading mechanism\n",
-    "try:\n",
-    "    from transformers import AutoModelForImageClassification, AutoConfig\n",
-    "    print(\"Attempting to load via HuggingFace Transformers...\")\n",
-    "    config = AutoConfig.from_pretrained(checkpoint_dir, num_labels=12)\n",
-    "    model = AutoModelForImageClassification.from_pretrained(\n",
-    "        checkpoint_dir, \n",
-    "        config=config, \n",
-    "        ignore_mismatched_sizes=True\n",
-    "    )\n",
-    "    is_hf = True\n",
-    "    print(\"Successfully loaded via Transformers!\")\n",
-    "except Exception as e:\n",
-    "    print(f\"Transformers load failed ({e}), falling back to timm...\")\n",
-    "    import timm\n",
-    "    # dynamic_img_size=True allows passing 224x224 into a 518x518 model without crashing\n",
-    "    model = timm.create_model('vit_base_patch14_dinov2.lvd142m', pretrained=False, num_classes=12, dynamic_img_size=True)\n",
-    "    \n",
-    "    state_dict = torch.load(checkpoint_file, weights_only=False)\n",
-    "    \n",
-    "    # Handle nested state dicts (prevents missing 176 keys)\n",
-    "    if 'model' in state_dict:\n",
-    "        state_dict = state_dict['model']\n",
-    "    elif 'state_dict' in state_dict:\n",
-    "        state_dict = state_dict['state_dict']\n",
-    "        \n",
-    "    if 'head.weight' in state_dict and state_dict['head.weight'].shape[0] != 12:\n",
-    "        del state_dict['head.weight']\n",
-    "        if 'head.bias' in state_dict:\n",
-    "            del state_dict['head.bias']\n",
-    "            \n",
-    "    result = model.load_state_dict(state_dict, strict=False)\n",
-    "    print(f\"Loaded via timm. Missing keys: {len(result.missing_keys)}\")\n",
-    "    is_hf = False\n",
+    "if os.path.exists(checkpoint_path):\n",
+    "    print(f\"Loading highly optimized baseline weights: {checkpoint_path}\")\n",
+    "    state_dict = torch.load(checkpoint_path, weights_only=False)\n",
+    "    if 'fc.weight' in state_dict and state_dict['fc.weight'].shape[0] != 12:\n",
+    "        del state_dict['fc.weight']\n",
+    "        if 'fc.bias' in state_dict:\n",
+    "            del state_dict['fc.bias']\n",
+    "    model.load_state_dict(state_dict, strict=False)\n",
     "\n",
+    "model.fc = nn.Linear(model.fc.in_features, 12)\n",
     "model = model.to(device)\n",
     "\n",
     "criterion = nn.BCEWithLogitsLoss()\n",
     "optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=1e-2)\n",
     "\n",
-    "num_epochs = 10\n",
+    "num_epochs = 5 # Reduced epochs to prevent overfitting on the small dataset\n",
     "for epoch in range(num_epochs):\n",
     "    model.train()\n",
     "    train_loss = 0.0\n",
     "    for imgs, targets in tqdm(train_loader, desc=f\"Epoch {epoch+1}/{num_epochs} [Train]\"):\n",
     "        imgs, targets = imgs.to(device), targets.to(device)\n",
     "        optimizer.zero_grad()\n",
-    "        \n",
     "        outputs = model(imgs)\n",
-    "        if is_hf:\n",
-    "            outputs = outputs.logits\n",
-    "            \n",
     "        loss = criterion(outputs, targets)\n",
     "        loss.backward()\n",
     "        optimizer.step()\n",
@@ -375,12 +271,23 @@
     "    val_loss = 0.0\n",
     "    with torch.no_grad():\n",
     "        for imgs, targets in tqdm(val_loader, desc=f\"Epoch {epoch+1}/{num_epochs} [Val]\"):\n",
-    "            imgs, targets = imgs.to(device), targets.to(device)\n",
-    "            outputs = model(imgs)\n",
-    "            if is_hf:\n",
-    "                outputs = outputs.logits\n",
+    "            B, N, C, H, W = imgs.shape\n",
+    "            imgs = imgs.view(B*N, C, H, W).to(device)\n",
+    "            targets = targets.to(device)\n",
+    "            \n",
+    "            # Test-Time Augmentation (TTA)\n",
+    "            logits1 = model(imgs)\n",
+    "            imgs_flipped = torch.flip(imgs, dims=[3])\n",
+    "            logits2 = model(imgs_flipped)\n",
+    "            \n",
+    "            # Average the TTA predictions\n",
+    "            outputs = (logits1 + logits2) / 2.0\n",
+    "            \n",
+    "            # Slice Ensemble Average (average across the N=3 slices)\n",
+    "            outputs = outputs.view(B, N, 12).mean(dim=1)\n",
+    "            \n",
     "            loss = criterion(outputs, targets)\n",
-    "            val_loss += loss.item() * imgs.size(0)\n",
+    "            val_loss += loss.item() * B\n",
     "            \n",
     "    val_loss /= len(val_dataset)\n",
     "    print(f\"Epoch {epoch+1:02d}/{num_epochs:02d} | Train Loss: {train_loss:.4f} | Val Loss: {val_loss:.4f}\")\n",
@@ -389,12 +296,22 @@
     "predictions = []\n",
     "study_ids = []\n",
     "with torch.no_grad():\n",
-    "    for imgs, s_ids in tqdm(test_loader, desc=\"Inference\"):\n",
-    "        imgs = imgs.to(device)\n",
-    "        outputs = model(imgs)\n",
-    "        if is_hf:\n",
-    "            outputs = outputs.logits\n",
+    "    for imgs, s_ids in tqdm(test_loader, desc=\"Inference (Slice Ensemble + TTA)\"):\n",
+    "        B, N, C, H, W = imgs.shape\n",
+    "        imgs = imgs.view(B*N, C, H, W).to(device)\n",
+    "        \n",
+    "        # Test-Time Augmentation (TTA)\n",
+    "        logits1 = model(imgs)\n",
+    "        imgs_flipped = torch.flip(imgs, dims=[3])\n",
+    "        logits2 = model(imgs_flipped)\n",
+    "        \n",
+    "        # Average the TTA predictions\n",
+    "        outputs = (logits1 + logits2) / 2.0\n",
     "        outputs = torch.sigmoid(outputs)\n",
+    "        \n",
+    "        # Slice Ensemble Average\n",
+    "        outputs = outputs.view(B, N, 12).mean(dim=1)\n",
+    "        \n",
     "        predictions.extend(outputs.cpu().numpy())\n",
     "        study_ids.extend(s_ids)\n",
     "\n",
@@ -433,383 +350,15 @@
   },
   "papermill": {
    "default_parameters": {},
-   "duration": 68.002521,
-   "end_time": "2026-08-08T08:03:47.018389+00:00",
+   "duration": 37.764489,
+   "end_time": "2026-08-08T08:10:54.839508+00:00",
    "environment_variables": {},
    "exception": null,
    "input_path": "__notebook__.ipynb",
    "output_path": "__notebook__.ipynb",
    "parameters": {},
-   "start_time": "2026-08-08T08:02:39.015868+00:00",
+   "start_time": "2026-08-08T08:10:17.075019+00:00",
    "version": "2.7.0"
-  },
-  "widgets": {
-   "application/vnd.jupyter.widget-state+json": {
-    "state": {
-     "0c418abb8bbc4423a0468bc0e8f7a217": {
-      "model_module": "@jupyter-widgets/base",
-      "model_module_version": "2.0.0",
-      "model_name": "LayoutModel",
-      "state": {
-       "_model_module": "@jupyter-widgets/base",
-       "_model_module_version": "2.0.0",
-       "_model_name": "LayoutModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/base",
-       "_view_module_version": "2.0.0",
-       "_view_name": "LayoutView",
-       "align_content": null,
-       "align_items": null,
-       "align_self": null,
-       "border_bottom": null,
-       "border_left": null,
-       "border_right": null,
-       "border_top": null,
-       "bottom": null,
-       "display": null,
-       "flex": null,
-       "flex_flow": null,
-       "grid_area": null,
-       "grid_auto_columns": null,
-       "grid_auto_flow": null,
-       "grid_auto_rows": null,
-       "grid_column": null,
-       "grid_gap": null,
-       "grid_row": null,
-       "grid_template_areas": null,
-       "grid_template_columns": null,
-       "grid_template_rows": null,
-       "height": null,
-       "justify_content": null,
-       "justify_items": null,
-       "left": null,
-       "margin": null,
-       "max_height": null,
-       "max_width": null,
-       "min_height": null,
-       "min_width": null,
-       "object_fit": null,
-       "object_position": null,
-       "order": null,
-       "overflow": null,
-       "padding": null,
-       "right": null,
-       "top": null,
-       "visibility": null,
-       "width": null
-      }
-     },
-     "1c1d6038356642f7a1af4f771245107b": {
-      "model_module": "@jupyter-widgets/base",
-      "model_module_version": "2.0.0",
-      "model_name": "LayoutModel",
-      "state": {
-       "_model_module": "@jupyter-widgets/base",
-       "_model_module_version": "2.0.0",
-       "_model_name": "LayoutModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/base",
-       "_view_module_version": "2.0.0",
-       "_view_name": "LayoutView",
-       "align_content": null,
-       "align_items": null,
-       "align_self": null,
-       "border_bottom": null,
-       "border_left": null,
-       "border_right": null,
-       "border_top": null,
-       "bottom": null,
-       "display": null,
-       "flex": null,
-       "flex_flow": null,
-       "grid_area": null,
-       "grid_auto_columns": null,
-       "grid_auto_flow": null,
-       "grid_auto_rows": null,
-       "grid_column": null,
-       "grid_gap": null,
-       "grid_row": null,
-       "grid_template_areas": null,
-       "grid_template_columns": null,
-       "grid_template_rows": null,
-       "height": null,
-       "justify_content": null,
-       "justify_items": null,
-       "left": null,
-       "margin": null,
-       "max_height": null,
-       "max_width": null,
-       "min_height": null,
-       "min_width": null,
-       "object_fit": null,
-       "object_position": null,
-       "order": null,
-       "overflow": null,
-       "padding": null,
-       "right": null,
-       "top": null,
-       "visibility": null,
-       "width": null
-      }
-     },
-     "2d1460800e6a43c0a744efdcc4f72211": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "2.0.0",
-      "model_name": "HTMLStyleModel",
-      "state": {
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "2.0.0",
-       "_model_name": "HTMLStyleModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/base",
-       "_view_module_version": "2.0.0",
-       "_view_name": "StyleView",
-       "background": null,
-       "description_width": "",
-       "font_size": null,
-       "text_color": null
-      }
-     },
-     "402f7eb601524797bcaf7bcec9e07ef0": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "2.0.0",
-      "model_name": "HTMLModel",
-      "state": {
-       "_dom_classes": [],
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "2.0.0",
-       "_model_name": "HTMLModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/controls",
-       "_view_module_version": "2.0.0",
-       "_view_name": "HTMLView",
-       "description": "",
-       "description_allow_html": false,
-       "layout": "IPY_MODEL_a9dc84b1f982409f8e6bd80a1cdb5bbe",
-       "placeholder": "​",
-       "style": "IPY_MODEL_f3f2384d3e074149a1dce0a5431d87b6",
-       "tabbable": null,
-       "tooltip": null,
-       "value": "Loading weights: 100%"
-      }
-     },
-     "7706578747774239820a8646a3760fb4": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "2.0.0",
-      "model_name": "ProgressStyleModel",
-      "state": {
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "2.0.0",
-       "_model_name": "ProgressStyleModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/base",
-       "_view_module_version": "2.0.0",
-       "_view_name": "StyleView",
-       "bar_color": null,
-       "description_width": ""
-      }
-     },
-     "8e9615b81c234433a86c9ee05239b8f1": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "2.0.0",
-      "model_name": "HBoxModel",
-      "state": {
-       "_dom_classes": [],
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "2.0.0",
-       "_model_name": "HBoxModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/controls",
-       "_view_module_version": "2.0.0",
-       "_view_name": "HBoxView",
-       "box_style": "",
-       "children": [
-        "IPY_MODEL_402f7eb601524797bcaf7bcec9e07ef0",
-        "IPY_MODEL_ce6e7fb302fa40bdb4d312b5cfef3309",
-        "IPY_MODEL_aa6bbfadfbc647c9af9d253e8b1f183e"
-       ],
-       "layout": "IPY_MODEL_cccd68aaca8c44c3bb52900be4542588",
-       "tabbable": null,
-       "tooltip": null
-      }
-     },
-     "a9dc84b1f982409f8e6bd80a1cdb5bbe": {
-      "model_module": "@jupyter-widgets/base",
-      "model_module_version": "2.0.0",
-      "model_name": "LayoutModel",
-      "state": {
-       "_model_module": "@jupyter-widgets/base",
-       "_model_module_version": "2.0.0",
-       "_model_name": "LayoutModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/base",
-       "_view_module_version": "2.0.0",
-       "_view_name": "LayoutView",
-       "align_content": null,
-       "align_items": null,
-       "align_self": null,
-       "border_bottom": null,
-       "border_left": null,
-       "border_right": null,
-       "border_top": null,
-       "bottom": null,
-       "display": null,
-       "flex": null,
-       "flex_flow": null,
-       "grid_area": null,
-       "grid_auto_columns": null,
-       "grid_auto_flow": null,
-       "grid_auto_rows": null,
-       "grid_column": null,
-       "grid_gap": null,
-       "grid_row": null,
-       "grid_template_areas": null,
-       "grid_template_columns": null,
-       "grid_template_rows": null,
-       "height": null,
-       "justify_content": null,
-       "justify_items": null,
-       "left": null,
-       "margin": null,
-       "max_height": null,
-       "max_width": null,
-       "min_height": null,
-       "min_width": null,
-       "object_fit": null,
-       "object_position": null,
-       "order": null,
-       "overflow": null,
-       "padding": null,
-       "right": null,
-       "top": null,
-       "visibility": null,
-       "width": null
-      }
-     },
-     "aa6bbfadfbc647c9af9d253e8b1f183e": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "2.0.0",
-      "model_name": "HTMLModel",
-      "state": {
-       "_dom_classes": [],
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "2.0.0",
-       "_model_name": "HTMLModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/controls",
-       "_view_module_version": "2.0.0",
-       "_view_name": "HTMLView",
-       "description": "",
-       "description_allow_html": false,
-       "layout": "IPY_MODEL_1c1d6038356642f7a1af4f771245107b",
-       "placeholder": "​",
-       "style": "IPY_MODEL_2d1460800e6a43c0a744efdcc4f72211",
-       "tabbable": null,
-       "tooltip": null,
-       "value": " 223/223 [00:00&lt;00:00, 1063.84it/s, Materializing param=dinov2.layernorm.weight]"
-      }
-     },
-     "cccd68aaca8c44c3bb52900be4542588": {
-      "model_module": "@jupyter-widgets/base",
-      "model_module_version": "2.0.0",
-      "model_name": "LayoutModel",
-      "state": {
-       "_model_module": "@jupyter-widgets/base",
-       "_model_module_version": "2.0.0",
-       "_model_name": "LayoutModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/base",
-       "_view_module_version": "2.0.0",
-       "_view_name": "LayoutView",
-       "align_content": null,
-       "align_items": null,
-       "align_self": null,
-       "border_bottom": null,
-       "border_left": null,
-       "border_right": null,
-       "border_top": null,
-       "bottom": null,
-       "display": null,
-       "flex": null,
-       "flex_flow": null,
-       "grid_area": null,
-       "grid_auto_columns": null,
-       "grid_auto_flow": null,
-       "grid_auto_rows": null,
-       "grid_column": null,
-       "grid_gap": null,
-       "grid_row": null,
-       "grid_template_areas": null,
-       "grid_template_columns": null,
-       "grid_template_rows": null,
-       "height": null,
-       "justify_content": null,
-       "justify_items": null,
-       "left": null,
-       "margin": null,
-       "max_height": null,
-       "max_width": null,
-       "min_height": null,
-       "min_width": null,
-       "object_fit": null,
-       "object_position": null,
-       "order": null,
-       "overflow": null,
-       "padding": null,
-       "right": null,
-       "top": null,
-       "visibility": null,
-       "width": null
-      }
-     },
-     "ce6e7fb302fa40bdb4d312b5cfef3309": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "2.0.0",
-      "model_name": "FloatProgressModel",
-      "state": {
-       "_dom_classes": [],
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "2.0.0",
-       "_model_name": "FloatProgressModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/controls",
-       "_view_module_version": "2.0.0",
-       "_view_name": "ProgressView",
-       "bar_style": "success",
-       "description": "",
-       "description_allow_html": false,
-       "layout": "IPY_MODEL_0c418abb8bbc4423a0468bc0e8f7a217",
-       "max": 223.0,
-       "min": 0.0,
-       "orientation": "horizontal",
-       "style": "IPY_MODEL_7706578747774239820a8646a3760fb4",
-       "tabbable": null,
-       "tooltip": null,
-       "value": 223.0
-      }
-     },
-     "f3f2384d3e074149a1dce0a5431d87b6": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "2.0.0",
-      "model_name": "HTMLStyleModel",
-      "state": {
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "2.0.0",
-       "_model_name": "HTMLStyleModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/base",
-       "_view_module_version": "2.0.0",
-       "_view_name": "StyleView",
-       "background": null,
-       "description_width": "",
-       "font_size": null,
-       "text_color": null
-      }
-     }
-    },
-    "version_major": 2,
-    "version_minor": 0
-   }
   }
  },
  "nbformat": 4,
