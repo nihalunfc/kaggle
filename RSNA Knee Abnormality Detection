@@ -3,26 +3,40 @@
   {
    "cell_type": "code",
    "execution_count": 1,
-   "id": "cf080837",
+   "id": "f56d9120",
    "metadata": {
     "_cell_guid": "b1076dfc-b9ad-4769-8c92-a6c4dae69d19",
     "_uuid": "8f2839f25d086af736a60e9eeb907d3b93b6e0e5",
     "execution": {
-     "iopub.execute_input": "2026-08-08T08:10:20.666180Z",
-     "iopub.status.busy": "2026-08-08T08:10:20.665883Z",
-     "iopub.status.idle": "2026-08-08T08:10:51.564832Z",
-     "shell.execute_reply": "2026-08-08T08:10:51.563579Z"
+     "iopub.execute_input": "2026-08-08T08:17:35.711531Z",
+     "iopub.status.busy": "2026-08-08T08:17:35.710808Z",
+     "iopub.status.idle": "2026-08-08T08:20:53.065735Z",
+     "shell.execute_reply": "2026-08-08T08:20:53.064597Z"
     },
     "papermill": {
-     "duration": 30.903604,
-     "end_time": "2026-08-08T08:10:51.566385+00:00",
+     "duration": 197.359753,
+     "end_time": "2026-08-08T08:20:53.067542+00:00",
      "exception": false,
-     "start_time": "2026-08-08T08:10:20.662781+00:00",
+     "start_time": "2026-08-08T08:17:35.707789+00:00",
      "status": "completed"
     },
     "tags": []
    },
    "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Generating pseudo-labels from 'Report' for all unannotated data...\n"
+     ]
+    },
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "NLP Pseudo-Labeling: 100%|██████████| 4407/4407 [00:01<00:00, 3719.34it/s]\n"
+     ]
+    },
     {
      "name": "stdout",
      "output_type": "stream",
@@ -34,87 +48,87 @@
      "name": "stderr",
      "output_type": "stream",
      "text": [
-      "Epoch 1/5 [Train]: 100%|██████████| 3/3 [00:03<00:00,  1.07s/it]\n",
-      "Epoch 1/5 [Val]: 100%|██████████| 2/2 [00:00<00:00,  2.58it/s]\n"
+      "Epoch 1/5 [Train]: 100%|██████████| 221/221 [00:36<00:00,  6.12it/s]\n",
+      "Epoch 1/5 [Val]: 100%|██████████| 111/111 [00:16<00:00,  6.91it/s]\n"
      ]
     },
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "Epoch 01/05 | Train Loss: 0.7198 | Val Loss: 0.6797\n"
+      "Epoch 01/05 | Train Loss: 0.4894 | Val Loss: 0.4419\n"
      ]
     },
     {
      "name": "stderr",
      "output_type": "stream",
      "text": [
-      "Epoch 2/5 [Train]: 100%|██████████| 3/3 [00:00<00:00,  4.09it/s]\n",
-      "Epoch 2/5 [Val]: 100%|██████████| 2/2 [00:00<00:00,  5.27it/s]\n"
+      "Epoch 2/5 [Train]: 100%|██████████| 221/221 [00:24<00:00,  9.09it/s]\n",
+      "Epoch 2/5 [Val]: 100%|██████████| 111/111 [00:08<00:00, 13.81it/s]\n"
      ]
     },
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "Epoch 02/05 | Train Loss: 0.6913 | Val Loss: 0.6992\n"
+      "Epoch 02/05 | Train Loss: 0.4704 | Val Loss: 0.4335\n"
      ]
     },
     {
      "name": "stderr",
      "output_type": "stream",
      "text": [
-      "Epoch 3/5 [Train]: 100%|██████████| 3/3 [00:00<00:00,  3.85it/s]\n",
-      "Epoch 3/5 [Val]: 100%|██████████| 2/2 [00:00<00:00,  5.75it/s]\n"
+      "Epoch 3/5 [Train]: 100%|██████████| 221/221 [00:24<00:00,  9.08it/s]\n",
+      "Epoch 3/5 [Val]: 100%|██████████| 111/111 [00:07<00:00, 14.09it/s]\n"
      ]
     },
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "Epoch 03/05 | Train Loss: 0.6509 | Val Loss: 0.6766\n"
+      "Epoch 03/05 | Train Loss: 0.4652 | Val Loss: 0.4324\n"
      ]
     },
     {
      "name": "stderr",
      "output_type": "stream",
      "text": [
-      "Epoch 4/5 [Train]: 100%|██████████| 3/3 [00:00<00:00,  4.14it/s]\n",
-      "Epoch 4/5 [Val]: 100%|██████████| 2/2 [00:00<00:00,  5.30it/s]\n"
+      "Epoch 4/5 [Train]: 100%|██████████| 221/221 [00:25<00:00,  8.82it/s]\n",
+      "Epoch 4/5 [Val]: 100%|██████████| 111/111 [00:08<00:00, 13.64it/s]\n"
      ]
     },
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "Epoch 04/05 | Train Loss: 0.6273 | Val Loss: 0.6558\n"
+      "Epoch 04/05 | Train Loss: 0.4645 | Val Loss: 0.4756\n"
      ]
     },
     {
      "name": "stderr",
      "output_type": "stream",
      "text": [
-      "Epoch 5/5 [Train]: 100%|██████████| 3/3 [00:00<00:00,  4.24it/s]\n",
-      "Epoch 5/5 [Val]: 100%|██████████| 2/2 [00:00<00:00,  5.97it/s]\n"
+      "Epoch 5/5 [Train]: 100%|██████████| 221/221 [00:22<00:00,  9.62it/s]\n",
+      "Epoch 5/5 [Val]: 100%|██████████| 111/111 [00:08<00:00, 13.56it/s]\n"
      ]
     },
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "Epoch 05/05 | Train Loss: 0.6220 | Val Loss: 0.6417\n"
+      "Epoch 05/05 | Train Loss: 0.4585 | Val Loss: 0.4365\n"
      ]
     },
     {
      "name": "stderr",
      "output_type": "stream",
      "text": [
-      "Inference (Slice Ensemble + TTA): 100%|██████████| 1/1 [00:00<00:00,  2.52it/s]\n"
+      "Inference (Slice Ensemble + TTA): 100%|██████████| 1/1 [00:00<00:00,  1.58it/s]\n"
      ]
     }
    ],
    "source": [
-    "#v13\n",
+    "#v14\n",
     "import os\n",
     "import pandas as pd\n",
     "import numpy as np\n",
@@ -135,7 +149,42 @@
     "\n",
     "labels = ['ACL', 'MCL', 'Medial Meniscus', 'Lateral Meniscus', 'Medial OA', 'Lateral OA', 'PF OA', 'Effusion', 'Synovitis', \"Baker's\", 'Contusion', 'Fracture']\n",
     "\n",
-    "train_df = train_df.dropna(subset=labels).reset_index(drop=True)\n",
+    "# --- MASSIVE UPGRADE: NLP Pseudo-Labeling to unlock the full 250GB dataset ---\n",
+    "def pseudo_label_reports(df):\n",
+    "    # Dynamically find the report column name\n",
+    "    report_col = None\n",
+    "    for col in ['Report', 'report', 'report_text', 'text']:\n",
+    "        if col in df.columns:\n",
+    "            report_col = col\n",
+    "            break\n",
+    "            \n",
+    "    if report_col is None:\n",
+    "        print(\"Warning: Report text column not found. Assuming unannotated studies are healthy (0.0 prior).\")\n",
+    "        df[labels] = df[labels].fillna(0.0)\n",
+    "        return df\n",
+    "        \n",
+    "    print(f\"Generating pseudo-labels from '{report_col}' for all unannotated data...\")\n",
+    "    for idx, row in tqdm(df.iterrows(), total=len(df), desc=\"NLP Pseudo-Labeling\"):\n",
+    "        if pd.isna(row['ACL']): # If labels are missing\n",
+    "            report = str(row[report_col]).lower()\n",
+    "            df.at[idx, 'ACL'] = 1.0 if 'acl' in report and ('tear' in report or 'sprain' in report) else 0.0\n",
+    "            df.at[idx, 'MCL'] = 1.0 if 'mcl' in report and ('tear' in report or 'sprain' in report) else 0.0\n",
+    "            df.at[idx, 'Medial Meniscus'] = 1.0 if 'medial meniscus' in report and 'tear' in report else 0.0\n",
+    "            df.at[idx, 'Lateral Meniscus'] = 1.0 if 'lateral meniscus' in report and 'tear' in report else 0.0\n",
+    "            df.at[idx, 'Medial OA'] = 1.0 if 'medial' in report and ('osteoarthritis' in report or 'oa' in report or 'narrowing' in report) else 0.0\n",
+    "            df.at[idx, 'Lateral OA'] = 1.0 if 'lateral' in report and ('osteoarthritis' in report or 'oa' in report or 'narrowing' in report) else 0.0\n",
+    "            df.at[idx, 'PF OA'] = 1.0 if 'patellofemoral' in report and ('osteoarthritis' in report or 'oa' in report) else 0.0\n",
+    "            df.at[idx, 'Effusion'] = 1.0 if 'effusion' in report else 0.0\n",
+    "            df.at[idx, 'Synovitis'] = 1.0 if 'synovitis' in report else 0.0\n",
+    "            df.at[idx, \"Baker's\"] = 1.0 if 'baker' in report or 'cyst' in report else 0.0\n",
+    "            df.at[idx, 'Contusion'] = 1.0 if 'contusion' in report or 'bruise' in report else 0.0\n",
+    "            df.at[idx, 'Fracture'] = 1.0 if 'fracture' in report or 'fx' in report else 0.0\n",
+    "            \n",
+    "    return df\n",
+    "\n",
+    "# We no longer drop NA. We pseudo-label the missing data and train on EVERYTHING.\n",
+    "train_df = pseudo_label_reports(train_df)\n",
+    "# -----------------------------------------------------------------------------\n",
     "\n",
     "class KneeDatasetSmarter(Dataset):\n",
     "    def __init__(self, df, series_df, data_dir, transform=None, is_inference=False):\n",
@@ -182,14 +231,13 @@
     "                        imgs.append(img)\n",
     "                    img_tensor = torch.stack(imgs)\n",
     "                else:\n",
-    "                    # Random depth sampling during training to prevent overfitting\n",
+    "                    # Random depth sampling during training to learn complex variance\n",
     "                    s_idx = np.random.randint(max(0, int(l*0.4)), min(l, int(l*0.6)) + 1)\n",
     "                    dcm = pydicom.dcmread(os.path.join(series_dir, slices[s_idx]))\n",
     "                    img = self._process_dcm(dcm)\n",
     "                    if self.transform: img = self.transform(img)\n",
     "                    img_tensor = img\n",
     "            except:\n",
-    "                # Fallback blank images\n",
     "                blank = Image.fromarray(np.zeros((224, 224, 3), dtype=np.uint8))\n",
     "                if self.is_inference:\n",
     "                    img_tensor = torch.stack([self.transform(blank) if self.transform else transforms.ToTensor()(blank) for _ in range(3)])\n",
@@ -208,7 +256,6 @@
     "        else:\n",
     "            return img_tensor, study_id\n",
     "\n",
-    "# Heavy data augmentation for training\n",
     "train_transform = transforms.Compose([\n",
     "    transforms.RandomHorizontalFlip(),\n",
     "    transforms.RandomRotation(15),\n",
@@ -226,14 +273,13 @@
     "val_dataset = KneeDatasetSmarter(train_df.iloc[int(len(train_df)*0.8):].reset_index(drop=True), train_series, '/kaggle/input/competitions/rsna-knee-abnormality-detection/train_series', transform=test_transform, is_inference=True)\n",
     "test_dataset = KneeDatasetSmarter(test_df, test_series, '/kaggle/input/competitions/rsna-knee-abnormality-detection/test_series', transform=test_transform, is_inference=True)\n",
     "\n",
-    "train_loader = DataLoader(train_dataset, batch_size=16, shuffle=True, num_workers=2)\n",
-    "# Reduced batch size for inference because we are stacking 3 slices per patient\n",
-    "val_loader = DataLoader(val_dataset, batch_size=8, shuffle=False, num_workers=2) \n",
-    "test_loader = DataLoader(test_dataset, batch_size=8, shuffle=False, num_workers=2)\n",
+    "# Increased workers to 4 for faster 250GB disk reading\n",
+    "train_loader = DataLoader(train_dataset, batch_size=16, shuffle=True, num_workers=4)\n",
+    "val_loader = DataLoader(val_dataset, batch_size=8, shuffle=False, num_workers=4) \n",
+    "test_loader = DataLoader(test_dataset, batch_size=8, shuffle=False, num_workers=4)\n",
     "\n",
     "device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')\n",
     "\n",
-    "# Baseline #v6 Architecture - Highly tuned for this dataset\n",
     "model = models.resnet18(weights=None)\n",
     "checkpoint_path = '/kaggle/input/notebooks/ramazanturann/resnet18/best_resnet18_model.pt'\n",
     "\n",
@@ -252,7 +298,7 @@
     "criterion = nn.BCEWithLogitsLoss()\n",
     "optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=1e-2)\n",
     "\n",
-    "num_epochs = 5 # Reduced epochs to prevent overfitting on the small dataset\n",
+    "num_epochs = 5 \n",
     "for epoch in range(num_epochs):\n",
     "    model.train()\n",
     "    train_loss = 0.0\n",
@@ -275,15 +321,11 @@
     "            imgs = imgs.view(B*N, C, H, W).to(device)\n",
     "            targets = targets.to(device)\n",
     "            \n",
-    "            # Test-Time Augmentation (TTA)\n",
     "            logits1 = model(imgs)\n",
     "            imgs_flipped = torch.flip(imgs, dims=[3])\n",
     "            logits2 = model(imgs_flipped)\n",
     "            \n",
-    "            # Average the TTA predictions\n",
     "            outputs = (logits1 + logits2) / 2.0\n",
-    "            \n",
-    "            # Slice Ensemble Average (average across the N=3 slices)\n",
     "            outputs = outputs.view(B, N, 12).mean(dim=1)\n",
     "            \n",
     "            loss = criterion(outputs, targets)\n",
@@ -300,16 +342,13 @@
     "        B, N, C, H, W = imgs.shape\n",
     "        imgs = imgs.view(B*N, C, H, W).to(device)\n",
     "        \n",
-    "        # Test-Time Augmentation (TTA)\n",
     "        logits1 = model(imgs)\n",
     "        imgs_flipped = torch.flip(imgs, dims=[3])\n",
     "        logits2 = model(imgs_flipped)\n",
     "        \n",
-    "        # Average the TTA predictions\n",
     "        outputs = (logits1 + logits2) / 2.0\n",
     "        outputs = torch.sigmoid(outputs)\n",
     "        \n",
-    "        # Slice Ensemble Average\n",
     "        outputs = outputs.view(B, N, 12).mean(dim=1)\n",
     "        \n",
     "        predictions.extend(outputs.cpu().numpy())\n",
@@ -350,14 +389,14 @@
   },
   "papermill": {
    "default_parameters": {},
-   "duration": 37.764489,
-   "end_time": "2026-08-08T08:10:54.839508+00:00",
+   "duration": 203.02778,
+   "end_time": "2026-08-08T08:20:56.435955+00:00",
    "environment_variables": {},
    "exception": null,
    "input_path": "__notebook__.ipynb",
    "output_path": "__notebook__.ipynb",
    "parameters": {},
-   "start_time": "2026-08-08T08:10:17.075019+00:00",
+   "start_time": "2026-08-08T08:17:33.408175+00:00",
    "version": "2.7.0"
   }
  },
